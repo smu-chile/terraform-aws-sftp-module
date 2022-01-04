@@ -74,7 +74,6 @@ variable "home-path" {
 
 
 variable "public_key" {
-  type    = string
-  default = ""
+  type    = map
 }
 
