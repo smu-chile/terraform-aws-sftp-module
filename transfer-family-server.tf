@@ -4,7 +4,7 @@ resource "aws_transfer_server" "main" {
 
   endpoint_details {
     address_allocation_ids = [element(aws_eip.main.*.id, 0),element(aws_eip.main.*.id, 1),element(aws_eip.main.*.id, 2)]
-    subnet_ids             = [element(split(",", var.subnets-ids), 0),element(split(",", var.subnets-ids), 1),element(split(",", var.subnets-ids), 2)]
+    subnet_ids             = [element(split(",", var.subnet-ids), 0),element(split(",", var.subnet-ids), 1),element(split(",", var.subnet-ids), 2)]
     vpc_id                 = var.vpc-id
     security_group_ids     = [aws_security_group.main.id]
   }
