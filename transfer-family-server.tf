@@ -41,7 +41,7 @@ resource "aws_security_group" "main" {
       from_port        = 0
       to_port          = 22
       protocol         = "tcp"
-      cidr_blocks      = [var.cids-blocks] #["34.73.66.189/32","35.227.19.200/32","34.138.190.218/32","186.148.38.115/32"]
+      cidr_blocks      = [var.cidr-blocks] #["34.73.66.189/32","35.227.19.200/32","34.138.190.218/32","186.148.38.115/32"]
     }
 
   tags = {
