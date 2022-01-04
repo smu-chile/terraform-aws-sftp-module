@@ -72,3 +72,9 @@ variable "home-path" {
   default = ""
 }
 
+
+variable "public_key" {
+  type    = string
+  default = ""
+}
+

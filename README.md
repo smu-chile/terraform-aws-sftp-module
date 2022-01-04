@@ -31,5 +31,6 @@ It order to be called, you must use these providers on your main script
 | country | Country for  for tagging resources | `string` | `""` | yes |
 | ceco | Cost Center for tagging resources  | `string` | `""` | yes |
 | owner | Owner for tagging resources  | `string` | `""` | yes |
+| public_key | Public Key for SSH communcation  | `string` | `""` | yes |
 
 
