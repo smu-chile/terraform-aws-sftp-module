@@ -21,6 +21,7 @@ It order to be called, you must use these providers on your main script
 | subnet-ids | Id's for all subnets where the sftp will be connected | `string` | `""` | yes |
 | cidr-blocks | CIDR Block for accepting connection to the sftp | `string` | `""` | yes |
 | endpoint-type |  The type of endpoint that you want your SFTP server connect to | `string` | `""` | yes |
+| home-path | Home path for the sftp server | `string` | `""` | yes |
 | security-policy-name | Security policy name  | `string` 
 | `""` | yes |
 | vpc-id | Id for the VPC where the SFTP will reside | `string` | `""` | yes |

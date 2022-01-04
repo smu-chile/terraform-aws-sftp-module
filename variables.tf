@@ -67,3 +67,8 @@ variable "owner" {
   default = ""
 }
 
+variable "home-path" {
+  type    = string
+  default = ""
+}
+
