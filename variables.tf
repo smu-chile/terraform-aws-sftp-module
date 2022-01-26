@@ -73,5 +73,4 @@ variable "home-path" {
 }
 
 variable "public_keys" {
-  default = ""
 }
