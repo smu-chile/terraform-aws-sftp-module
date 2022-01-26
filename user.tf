@@ -19,5 +19,5 @@ resource "aws_transfer_ssh_key" "main" {
   count     = length(var.environment)
   server_id = aws_transfer_server.main.id
   user_name = aws_transfer_user.main[count.index].user_name
-  body      = var.public_keys[index(var.public_keys.*.environment, var.environment[count.index])] #var.public_keys[var.environment[count.index]].public_key_info
+  body      = var.public_keys[var.environment[count.index]].public_key_info
 }
