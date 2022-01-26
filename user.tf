@@ -19,6 +19,6 @@ resource "aws_transfer_ssh_key" "main" {
   count     = length(var.environment)
   server_id = aws_transfer_server.main.id
   user_name = aws_transfer_user.main[count.index].user_name
-  body      = var.public_keys[var.environment[count.index]].public_key_info
-   #var.environment[count.index] == "dev" ? join("-", [data.consul_key_prefix.input.subkeys["/dev/public-key"]]) : (var.environment[count.index] == "qa" ? join("-", [data.consul_key_prefix.input.subkeys["/qa/public-key"]]) : join("-", [data.consul_key_prefix.input.subkeys["/prod/public-key"]]))
+  body      = var.public_keys
+  #var.public_keys[var.environment[count.index]].public_key_info
 }
