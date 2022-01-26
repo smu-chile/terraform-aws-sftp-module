@@ -1,5 +1,5 @@
 variable "environment" {
-  type    = list
+  type    = list(any)
   default = ["dev", "qa", "prod"]
 }
 

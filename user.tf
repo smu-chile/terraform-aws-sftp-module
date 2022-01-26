@@ -5,7 +5,7 @@ resource "aws_transfer_user" "main" {
   role                = aws_iam_role.main.arn
   policy              = aws_iam_role_policy.main2.policy
   home_directory_type = "PATH"
-  home_directory      = join("/", [join("",["/",var.home-path]), var.environment[count.index]])
+  home_directory      = join("/", [join("", ["/", var.home-path]), var.environment[count.index]])
   tags = {
     Name    = var.root-domain
     Region  = var.region
